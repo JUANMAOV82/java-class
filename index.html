@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=u, initial-scale=1.0">
+    <title>Buttons</title>
+
+    <style>
+        main {
+            height: 100vh;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <button id="colorbtn">Click! </button>
+    </header>
+    <main id="mainel"></main>
+
+    <script>
+        let clrbtn = document.getElementById("colorbtn")
+        console.log(clrbtn);
+        const mnElement = document.getElementById("mainel")
+
+        clrbtn. addEventListener("click", ()=>{
+            let red = Math. random()*255
+            let green = Math. random()*255
+            let blue = Math. random()*255
+            console.log(red); 
+
+            mnElement.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")"
+        })
+    </script>
+</body>
+</html>
