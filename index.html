@@ -10,20 +10,43 @@
         main {
             height: 100vh;
         }
+
+        main img {
+            max-width: 200px;
+        }
+
+        
     </style>
 
 </head>
 <body>
     <header>
         <button id="colorbtn">Click! </button>
+        <button id="textbtn">Click for text!</button>
+
+        <img src="Laughing_man_logo.png" alt="smile" id="imagebtn">
     </header>
     <main id="mainel"></main>
 
     <script>
+    
         let clrbtn = document.getElementById("colorbtn")
         console.log(clrbtn);
         const mnElement = document.getElementById("mainel")
+        const textbtn = document.getElementById("textbtn")
+        const imabtn = document.getElementById("imagebtn")
 
+        const addAnImage = () => {
+            let imaBtn = document. createElement("ïmg");
+            imgBtn.src = "Laughing_man_logo.png";
+            imBtn.alt = "new"
+        }
+        const addSomeText = ()=>{
+
+        }
+
+        textbtn. addEventListener("click", addSomeText)
+        imabtn. addEventListener("click", addAnImage)
         clrbtn. addEventListener("click", ()=>{
             let red = Math. random()*255
             let green = Math. random()*255
@@ -32,6 +55,8 @@
 
             mnElement.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")"
         })
+
+    
     </script>
 </body>
 </html>
